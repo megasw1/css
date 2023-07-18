@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #ffeead;
+        margin: 10px;
+      }
+      .container div {
+        padding: 10px;
+        text-align: center;
+        font-size: 2em; /*원래 폰트의 2배(16px이 기본)*/
+        color: #ffeead;
+      }
+      .home {
+        background-color: #96ce64;
+        margin-right: auto;
+        flex: 1;
+        order: 2;
+      }
+      .search {
+        background-color: azure;
+        flex: 3;
+        order: 1;
+      }
+      .logout {
+        background-color: blue;
+        flex: 1;
+        order: 3;
+      }
+      .container {
+        border: 5px solid black;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="home">Home</div>
+      <div class="search">Search</div>
+      <div class="logout">Logout</div>
+    </div>
+  </body>
+</html>
